@@ -13,7 +13,6 @@ Buildrequires:	dbus-glib-devel
 Buildrequires:	popt-devel
 Buildrequires:	gtk+2-devel
 Buildrequires:	gtk-doc
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 A library that sends desktop notifications to a notification daemon, as
