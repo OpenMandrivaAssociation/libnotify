@@ -1,11 +1,12 @@
 %define major 1
 %define libname %mklibname notify %{major}
+%define develname %mklibname -d notify
 
 Summary:	Desktop notifications library
 Name:		libnotify
 Version:	0.4.5
-Release:	%mkrel 1
-License:	GPL
+Release:	%mkrel 2
+License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://www.galago-project.org/
 Source:		http://www.galago-project.org/files/releases/source/libnotify/libnotify-%version.tar.bz2
@@ -32,13 +33,14 @@ defined in the Desktop Notifications spec. These notifications can be
 used to inform the user about an event or display some form of
 information without getting in the user's way.
 
-%package -n %{libname}-devel
+%package -n %develname
 Group:		Development/C
 Summary:	Desktop notifications library - headers
 Requires:	%{libname} = %{version}
 Provides:	%{name}-devel = %{version}-%{release}
+Obsoletes:	%mklibname -d notify 1
 
-%description -n %libname-devel
+%description -n %develname
 A library that sends desktop notifications to a notification daemon, as
 defined in the Desktop Notifications spec. These notifications can be
 used to inform the user about an event or display some form of
@@ -75,7 +77,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_libdir}/lib*.so.%{major}*
 
-%files -n %{libname}-devel
+%files -n %develname
 %defattr(-,root,root)
 %{_libdir}/lib*.a
 %{_libdir}/lib*.so
