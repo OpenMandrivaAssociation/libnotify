@@ -2,10 +2,14 @@
 %define libname %mklibname notify %{major}
 %define develname %mklibname -d notify
 
+%define bootstrap 0
+%{?_without_bootstrap: %global bootstrap 0}
+%{?_with_bootstrap: %global bootstrap 1}
+
 Summary:	Desktop notifications library
 Name:		libnotify
 Version:	0.4.5
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://www.galago-project.org/
@@ -25,7 +29,9 @@ information without getting in the user's way.
 %package -n %{libname}
 Group:		System/Libraries
 Summary:	Desktop notifications library - shared library
+%if !%{bootstrap}
 Requires:	virtual-notification-daemon
+%endif
 
 %description -n %{libname}
 A library that sends desktop notifications to a notification daemon, as
