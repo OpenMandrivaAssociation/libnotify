@@ -1,4 +1,4 @@
-%define major 1
+%define major 4
 %define libname %mklibname notify %{major}
 %define develname %mklibname -d notify
 
@@ -8,7 +8,7 @@
 
 Summary:	Desktop notifications library
 Name:		libnotify
-Version:	0.5.2
+Version:	0.7.2
 Release:	%mkrel 1
 License:	LGPLv2+
 Group:		System/Libraries
@@ -16,7 +16,8 @@ URL:		http://www.galago-project.org/
 Source:		http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 Buildrequires:	dbus-glib-devel
 Buildrequires:	popt-devel
-Buildrequires:	gtk+2-devel
+Buildrequires:	gtk+3.0-devel >= 2.90
+Buildrequires:	gobject-introspection-devel
 Buildrequires:	gtk-doc
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -82,6 +83,7 @@ rm -rf %{buildroot}
 %files -n %{libname}
 %defattr(-,root,root)
 %{_libdir}/lib*.so.%{major}*
+%_libdir/girepository-1.0/Notify-0.7.typelib
 
 %files -n %develname
 %defattr(-,root,root)
@@ -91,3 +93,4 @@ rm -rf %{buildroot}
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
 %_datadir/gtk-doc/html/*
+%_datadir/gir-1.0/Notify-0.7.gir
