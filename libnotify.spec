@@ -8,8 +8,8 @@
 
 Summary:	Desktop notifications library
 Name:		libnotify
-Version:	0.7.2
-Release:	%mkrel 2
+Version:	0.7.3
+Release:	%mkrel 1
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://www.galago-project.org/
