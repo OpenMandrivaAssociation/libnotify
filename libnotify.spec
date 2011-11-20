@@ -65,6 +65,9 @@ information without getting in the user's way.
 rm -rf %{buildroot}
 %makeinstall_std
 
+# remove some quite annoying /usr/usr
+perl -pi -e "s|/usr/usr/%{_lib}|%{_libdir}|g" %{buildroot}%{_libdir}/*.la
+
 %clean
 rm -rf %{buildroot}
 
