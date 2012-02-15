@@ -65,7 +65,7 @@ information without getting in the user's way.
 %configure2_5x \
 	--disable-static
 
-%make
+%make LIBS='-lgmodule-2.0'
 
 %install
 rm -rf %{buildroot}
