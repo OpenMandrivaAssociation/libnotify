@@ -7,11 +7,11 @@
 Summary:	Desktop notifications library
 Name:		libnotify
 Version:	0.7.4
-Release:	4
+Release:	5
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://www.galago-project.org/
-Source:		http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 
 Buildrequires:	gtk-doc
 Buildrequires:	pkgconfig(dbus-glib-1)
@@ -57,7 +57,6 @@ A library that sends desktop notifications to a notification daemon, as
 defined in the Desktop Notifications spec. These notifications can be
 used to inform the user about an event or display some form of
 information without getting in the user's way.
-
 
 %prep
 %setup -q
