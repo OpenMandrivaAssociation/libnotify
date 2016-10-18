@@ -1,13 +1,13 @@
-%define major	4
-%define gimajor	0.7
-%define libname	%mklibname notify %{major}
-%define girname	%mklibname notify-gir %{gimajor}
-%define devname	%mklibname -d notify
+%define major 4
+%define gimajor 0.7
+%define libname %mklibname notify %{major}
+%define girname %mklibname notify-gir %{gimajor}
+%define devname %mklibname -d notify
 
 Summary:	Desktop notifications library
 Name:		libnotify
-Version:	0.7.6
-Release:	9
+Version:	0.7.7
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.galago-project.org/
