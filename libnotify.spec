@@ -7,7 +7,7 @@
 Summary:	Desktop notifications library
 Name:		libnotify
 Version:	0.7.7
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.galago-project.org/
@@ -57,13 +57,13 @@ This package includes the development files for %{name}.
 %setup -q
 
 %build
-%configure2_5x \
+%configure \
 	--disable-static
 
-%make LIBS='-lgmodule-2.0'
+%make_build LIBS='-lgmodule-2.0'
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/*
