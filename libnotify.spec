@@ -7,7 +7,7 @@
 Summary:	Desktop notifications library
 Name:		libnotify
 Version:	0.7.7
-Release:	5
+Release:	6
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.galago-project.org/
@@ -39,6 +39,7 @@ information without getting in the user's way.
 %package -n %{girname}
 Group:		System/Libraries
 Summary:	GObject Introspection interface library for %{name}
+Requires:	typelib(GdkPixbuf)
 
 %description -n %{girname}
 GObject Introspection interface library for %{name}.
