@@ -6,8 +6,8 @@
 
 Summary:	Desktop notifications library
 Name:		libnotify
-Version:	0.7.7
-Release:	7
+Version:	0.7.8
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.galago-project.org/
@@ -56,7 +56,7 @@ Requires:	pkgconfig(gobject-introspection-1.0)
 This package includes the development files for %{name}.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure \
@@ -82,4 +82,3 @@ This package includes the development files for %{name}.
 %{_includedir}/*
 %{_datadir}/gtk-doc/html/*
 %{_datadir}/gir-1.0/Notify-%{gimajor}.gir
-
