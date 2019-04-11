@@ -79,5 +79,4 @@ This package includes the development files for %{name}.
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
-%{_datadir}/gtk-doc/html/*
 %{_datadir}/gir-1.0/Notify-%{gimajor}.gir
