@@ -59,7 +59,7 @@ This package includes the development files for %{name}.
 %autosetup -p1
 
 %build
-%meson -Dtests=false -Dgtk_doc=false -Ddocbook_docs=false
+%meson -Dtests=false -Dgtk_doc=false -Ddocbook_docs=disabled
 
 %meson_build
 
