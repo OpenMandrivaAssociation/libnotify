@@ -14,6 +14,7 @@ Url:		http://www.galago-project.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 BuildRequires:	meson
 BuildRequires:	ninja
+BuildRequires:  xsltproc
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0) >= 2.90
