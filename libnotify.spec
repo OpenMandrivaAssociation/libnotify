@@ -15,6 +15,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.x
 BuildRequires:	meson
 BuildRequires:	ninja
 BuildRequires:  xsltproc
+BuildRequires:  docbook-xsl
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0) >= 2.90
