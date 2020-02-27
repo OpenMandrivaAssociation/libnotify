@@ -70,6 +70,7 @@ This package includes the development files for %{name}.
 
 %files
 %{_bindir}/*
+%{_mandir}/man1/notify-send.1.*
 
 %files -n %{libname}
 %{_libdir}/libnotify.so.%{major}*
