@@ -7,15 +7,15 @@
 Summary:	Desktop notifications library
 Name:		libnotify
 Version:	0.7.9
-Release:	4
+Release:	5
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.galago-project.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 BuildRequires:	meson
 BuildRequires:	ninja
-BuildRequires:  xsltproc
-BuildRequires:  docbook-xsl-ns
+BuildRequires:	xsltproc
+BuildRequires:	docbook-xsl-ns
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0) >= 2.90
@@ -49,9 +49,10 @@ GObject Introspection interface library for %{name}.
 %package -n %{devname}
 Group:		Development/C
 Summary:	Desktop notifications library - headers
-Requires:	%{libname} = %{version}-%{release}
-Requires:	%{girname} = %{version}-%{release}
-Provides:	%{name}-devel = %{version}-%{release}
+Requires:	%{name} = %{EVRD}
+Requires:	%{libname} = %{EVRD}
+Requires:	%{girname} = %{EVRD}
+Provides:	%{name}-devel = %{EVRD}
 Requires:	pkgconfig(gobject-introspection-1.0)
 
 %description -n %{devname}
@@ -70,7 +71,7 @@ This package includes the development files for %{name}.
 
 %files
 %{_bindir}/*
-%{_mandir}/man1/notify-send.1.*
+%doc %{_mandir}/man1/notify-send.1.*
 
 %files -n %{libname}
 %{_libdir}/libnotify.so.%{major}*
