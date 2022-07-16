@@ -1,5 +1,5 @@
 %define major 4
-%define gimajor 0.7
+%define gimajor 0.8
 %define libname %mklibname notify %{major}
 %define girname %mklibname notify-gir %{gimajor}
 %define devname %mklibname -d notify
