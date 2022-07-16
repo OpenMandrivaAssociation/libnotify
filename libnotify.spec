@@ -1,12 +1,12 @@
 %define major 4
-%define gimajor 0.7
+%define gimajor 0.8
 %define libname %mklibname notify %{major}
 %define girname %mklibname notify-gir %{gimajor}
 %define devname %mklibname -d notify
 
 Summary:	Desktop notifications library
 Name:		libnotify
-Version:	0.7.12
+Version:	0.8.0
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
