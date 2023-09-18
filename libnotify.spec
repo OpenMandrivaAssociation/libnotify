@@ -7,11 +7,11 @@
 Summary:	Desktop notifications library
 Name:		libnotify
 Version:	0.8.2
-Release:	4
+Release:	5
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://www.galago-project.org/
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
+Url:		https://www.galago-project.org/
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 BuildRequires:	meson
 BuildRequires:	ninja
 BuildRequires:	xsltproc
