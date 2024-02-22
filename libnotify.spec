@@ -7,17 +7,16 @@
 Summary:	Desktop notifications library
 Name:		libnotify
 Version:	0.8.3
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		https://www.galago-project.org/
-Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
+Source0:	https://download.gnome.org/sources/%{name}/0.8/%{name}-%{version}.tar.xz
 BuildRequires:	meson
 BuildRequires:	ninja
 BuildRequires:	xsltproc
 BuildRequires:	docbook-xsl-ns
 BuildRequires:	pkgconfig(dbus-glib-1)
-BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0) >= 2.90
 BuildRequires:	pkgconfig(popt)
 Requires:	virtual-notification-daemon
@@ -53,7 +52,6 @@ Requires:	%{name} = %{EVRD}
 Requires:	%{libname} = %{EVRD}
 Requires:	%{girname} = %{EVRD}
 Provides:	%{name}-devel = %{EVRD}
-Requires:	pkgconfig(gobject-introspection-1.0)
 
 %description -n %{devname}
 This package includes the development files for %{name}.
