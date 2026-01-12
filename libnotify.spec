@@ -6,7 +6,7 @@
 
 Summary:	Desktop notifications library
 Name:		libnotify
-Version:	0.8.7
+Version:	0.8.8
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
